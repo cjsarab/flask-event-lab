@@ -4,6 +4,8 @@
 
     <h3> {{ Header }} </h3>
 
+    <div class="labels">
+
     <form action="/events" method="post">
 
         <label for="title">Event</label>
@@ -13,7 +15,7 @@
         <textarea name="description" id="description" cols="30" rows="2"></textarea>
 
         <label for="date">Date</label>
-        <input type="date" name = "date" id="date">
+        <input type="date" name="date" id="date">
 
         <label for="number of guests">Number of guests</label>
         <input type="number" name="guests" id="guests">
@@ -23,9 +25,12 @@
 
         <input type="submit" value="Add Event">
 
+    </div>
+
     </form>
 
     {% for event in events %}
+    <div class="main_text"
     <div>
         <p>
             {{ event.date }} : {{ event.name_of_event }} <a href="http://127.0.0.1:4999/events/{{events.index(event)}}"> Read More ...</a>
