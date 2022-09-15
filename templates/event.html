@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3> {{ event.name_of_event }}</h3>
+
+<p>
+    {{ event.name_of_event }} will be at this location: {{ event.room_location }}.
+</p>
+<br>
+<p>
+    The total number of guests will be {{ event.no_of_guests }}.
+</p>
+<br>
+<p>
+    The event will be on this date: {{ event.date }}.
+</p>
+<br>
+<p>
+    More details:
+    {{ event.description }}
+</p>
+
+
+{% endblock %}

@@ -6,3 +6,6 @@ event2 = Event(datetime.date(2022, 9, 15), "Mini Golf", 10, "Jungle Rumble", "Th
 event3 = Event(datetime.date(2022, 4, 12), "Football", 12500, "Tannadice Park", "Dundee United vs Dundee")
 
 events = [event1, event2, event3]
+
+def add_new_event(event):
+    events.append(event)
