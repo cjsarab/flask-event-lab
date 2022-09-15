@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> {{ title }} </title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/events">Home</a>
+                </li>
+            </ul>
+            <hr>
+        </nav>
+        <header>
+            <h1>{{ sub_title }}</h1>
+        </header>
+            <main>
+                {% block content %}
+
+                {% endblock %}
+
+            </main>
+    </body>
+</html>

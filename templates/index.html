@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h3> {{ events }} </h3>
+
+    <form action="/events" method="post"></form>
+
+        <label for="title">Event</label>
+        <input type="text" name="title" id="title">
+
+        <label for="description">Description</label>
+        <textarea name="description" id="description" cols="30" rows="2"></textarea>
+
+        <label for="date">Date</label>
+        <input type="date" id="date">
+
+        <label for="number of guests">Number of guests</label>
+        <input type="number" name="guests" id="guests">
+
+        <label for="location">Location</label>
+        <input type="text" id="location">
+
+
+{% endblock %}
+
+
